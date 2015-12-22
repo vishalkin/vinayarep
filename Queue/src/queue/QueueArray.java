@@ -15,7 +15,7 @@ public class QueueArray {
 	  }  
 	  
 	 }  
-	  
+	   
 	 public void dequeue() {  
 	  if (front >= rear) {  
 	   rear++;  

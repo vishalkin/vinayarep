@@ -16,7 +16,7 @@ public void display() {
 	  if(a.isEmpty()) {  
 		   System.out.println("No elemets in the queue ");  
 		  }
-	 else{
+	 else{ 
 		 System.out.println("Elements in the Queue : ");  
 		   for(int obj:a)  {
 			    System.out.println(obj);  
