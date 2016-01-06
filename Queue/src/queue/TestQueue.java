@@ -4,12 +4,11 @@ public class TestQueue {
 
 	public static void main(String[] args) {
 		 //TODO Auto-generated method stub
-		QueueArray queue1 = new QueueArray();  
+		Queue queue1 = new QueueArray();  
 		
-		QueueArrayList queue2= new QueueArrayList();
+		Queue queue2= new QueueArrayList();
 	
-		
-		QueueLinkedList queue3=new QueueLinkedList();
+		Queue queue3=new QueueLinkedList();
 		queue3.enqueue(21);
 		queue3.enqueue(22);
 		queue3.enqueue(23);
