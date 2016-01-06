@@ -5,8 +5,9 @@ import java.util.ArrayList;
 public class QueueArrayList implements Queue {
 	ArrayList<Integer> a=new ArrayList<Integer>(); 
 
-	public void enqueue(int element) {  	  
+	public boolean enqueue(int element) {  	  
 		a.add(element);    
+		return true;
 	} 
 
 
@@ -23,13 +24,15 @@ public class QueueArrayList implements Queue {
 		}  
 	}
 
-	public void dequeue() {  
+	public boolean dequeue() {  
 
 		if(a.isEmpty()) {  
-			System.out.println("Cannot pop..queue is empty !");  
+			//System.out.println("Cannot pop..queue is empty !");  
+			return false;
 		}
 		else{
 			a.remove(0);
+			return true;
 		}
 	}  
 }

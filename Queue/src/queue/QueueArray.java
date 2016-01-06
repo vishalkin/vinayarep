@@ -5,24 +5,32 @@ public class QueueArray implements Queue {
 	int arr[] = new int[capacity];  
 	int front = -1, rear = 0;  
 
-	public void enqueue(int element) {  
+	public boolean enqueue(int element) {  
 		if (front < capacity-1) {  
 			front++;  
 			arr[front] = element;   
+			return true;
 		} 
+		
 		else {  
-			System.out.println("Cannot push..queue is full !");  
+			//System.out.println("Cannot push..queue is full !");  
+			return false;
 		}  
+		
 
 	}  
 
-	public void dequeue() {  
+	public boolean dequeue() {  
 		if (front >= rear) {  
 			rear++;  
+			return true;
 		} 
+		
 		else {  
-			System.out.println("Cannot pop..queue is empty !");  
+			//System.out.println("Cannot pop..queue is empty !");  
+			return false;
 		}  
+		
 	}  
 
 	public void display() {  

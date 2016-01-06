@@ -4,17 +4,20 @@ import java.util.LinkedList;
 
 public class QueueLinkedList implements Queue{
 	LinkedList<Integer> l =new LinkedList<Integer>();
-	public void enqueue(int data) {
+	public boolean enqueue(int data) {
 		l.addLast(data);
+		return true;
 	}
 
-	public void dequeue() {
+	public boolean dequeue() {
 
 		if(l.isEmpty()) {  
-			System.out.println("No elemets in the queue ");  
+			//System.out.println("No elemets in the queue ");  
+			return false;
 		}
 		else{
 			l.removeFirst();
+			return true;
 		}  
 	}
 
